@@ -1,0 +1,234 @@
+In file included from ../../../../../taller1/lista_tests.cpp:2:
+./Lista.h: In constructor ‘Lista::Nodo::Nodo(int)’:
+./Lista.h:92:13: warning: ‘Lista::Nodo::valor’ will be initialized after [-Wreorder]
+   92 |         int valor;
+      |             ^~~~~
+./Lista.h:91:15: warning:   ‘Lista::Nodo* Lista::Nodo::ant’ [-Wreorder]
+   91 |         Nodo* ant;
+      |               ^~~
+./Lista.h:94:9: warning:   when initialized here [-Wreorder]
+   94 |         Nodo(int x): valor(x), ant(nullptr), sig(nullptr){}
+      |         ^~~~
+../../../../../taller1/lista_tests.cpp: In member function ‘virtual void lista_test_test_constructor_vacio_Test::TestBody()’:
+../../../../../taller1/lista_tests.cpp:11:5: error: ‘Lista’ is not a template
+   11 |     Lista<int> l;
+      |     ^~~~~
+../../../../../taller1/lista_tests.cpp: In member function ‘virtual void lista_test_test_agregar_un_elemento_adelante_Test::TestBody()’:
+../../../../../taller1/lista_tests.cpp:16:5: error: ‘Lista’ is not a template
+   16 |     Lista<int> l;
+      |     ^~~~~
+../../../../../taller1/lista_tests.cpp: In member function ‘virtual void lista_test_test_agregar_un_elemento_atras_Test::TestBody()’:
+../../../../../taller1/lista_tests.cpp:23:5: error: ‘Lista’ is not a template
+   23 |     Lista<int> l;
+      |     ^~~~~
+../../../../../taller1/lista_tests.cpp: In member function ‘virtual void lista_test_test_agregar_varios_elementos_solo_adelante_Test::TestBody()’:
+../../../../../taller1/lista_tests.cpp:30:5: error: ‘Lista’ is not a template
+   30 |     Lista<int> l;
+      |     ^~~~~
+../../../../../taller1/lista_tests.cpp: In member function ‘virtual void lista_test_test_agregar_varios_elementos_solo_atras_Test::TestBody()’:
+../../../../../taller1/lista_tests.cpp:43:5: error: ‘Lista’ is not a template
+   43 |     Lista<int> l;
+      |     ^~~~~
+../../../../../taller1/lista_tests.cpp: In member function ‘virtual void lista_test_test_agregar_varios_elementos_adelante_y_atras_Test::TestBody()’:
+../../../../../taller1/lista_tests.cpp:56:5: error: ‘Lista’ is not a template
+   56 |     Lista<int> l;
+      |     ^~~~~
+../../../../../taller1/lista_tests.cpp: In member function ‘virtual void lista_test_test_eliminar_elementos_Test::TestBody()’:
+../../../../../taller1/lista_tests.cpp:71:5: error: ‘Lista’ is not a template
+   71 |     Lista<int> l;
+      |     ^~~~~
+../../../../../taller1/lista_tests.cpp: In member function ‘virtual void lista_test_test_constructor_por_copia_Test::TestBody()’:
+../../../../../taller1/lista_tests.cpp:97:5: error: ‘Lista’ is not a template
+   97 |     Lista<int> l;
+      |     ^~~~~
+../../../../../taller1/lista_tests.cpp:103:5: error: ‘Lista’ is not a template
+  103 |     Lista<int> otra(l);
+      |     ^~~~~
+../../../../../taller1/lista_tests.cpp: In member function ‘virtual void lista_test_test_operador_asignacion_Test::TestBody()’:
+../../../../../taller1/lista_tests.cpp:116:5: error: ‘Lista’ is not a template
+  116 |     Lista<int> l;
+      |     ^~~~~
+../../../../../taller1/lista_tests.cpp:122:5: error: ‘Lista’ is not a template
+  122 |     Lista<int> otra = l;
+      |     ^~~~~
+../../../../../taller1/lista_tests.cpp:138:12: error: ‘Lista’ is not a template
+  138 |     otra = Lista<int>();
+      |            ^~~~~
+../../../../../taller1/lista_tests.cpp: In member function ‘virtual void lista_test_test_lista_de_lista_Test::TestBody()’:
+../../../../../taller1/lista_tests.cpp:143:5: error: ‘Lista’ is not a template
+  143 |     Lista<int> l;
+      |     ^~~~~
+../../../../../taller1/lista_tests.cpp:149:5: error: ‘Lista’ is not a template
+  149 |     Lista<Lista<int> > ll;
+      |     ^~~~~
+../../../../../taller1/lista_tests.cpp:149:11: error: ‘Lista’ is not a template
+  149 |     Lista<Lista<int> > ll;
+      |           ^~~~~
+../../../../../taller1/lista_tests.cpp:150:21: error: cannot convert ‘Lista’ to ‘const int&’
+  150 |     ll.agregarAtras(l);
+      |                     ^
+      |                     |
+      |                     Lista
+In file included from ../../../../../taller1/lista_tests.cpp:2:
+./Lista.h:46:34: note:   initializing argument 1 of ‘void Lista::agregarAtras(const int&)’
+   46 |     void agregarAtras(const int& elem);
+      |                       ~~~~~~~~~~~^~~~
+../../../../../taller1/lista_tests.cpp:151:21: error: cannot convert ‘Lista’ to ‘const int&’
+  151 |     ll.agregarAtras(l);
+      |                     ^
+      |                     |
+      |                     Lista
+In file included from ../../../../../taller1/lista_tests.cpp:2:
+./Lista.h:46:34: note:   initializing argument 1 of ‘void Lista::agregarAtras(const int&)’
+   46 |     void agregarAtras(const int& elem);
+      |                       ~~~~~~~~~~~^~~~
+../../../../../taller1/lista_tests.cpp:152:21: error: cannot convert ‘Lista’ to ‘const int&’
+  152 |     ll.agregarAtras(l);
+      |                     ^
+      |                     |
+      |                     Lista
+In file included from ../../../../../taller1/lista_tests.cpp:2:
+./Lista.h:46:34: note:   initializing argument 1 of ‘void Lista::agregarAtras(const int&)’
+   46 |     void agregarAtras(const int& elem);
+      |                       ~~~~~~~~~~~^~~~
+In file included from ../../../../../taller1/lista_tests.cpp:1:
+../../../../../taller1/lista_tests.cpp:156:28: error: request for member ‘longitud’ in ‘ll.Lista::iesimo(0)’, which is of non-class type ‘int’
+  156 |     ASSERT_EQ(ll.iesimo(0).longitud(), 4);
+      |                            ^~~~~~~~
+../../../../../taller1/gtest-1.8.1/gtest.h:19862:52: note: in definition of macro ‘GTEST_ASSERT_’
+19862 |   if (const ::testing::AssertionResult gtest_ar = (expression)) \
+      |                                                    ^~~~~~~~~~
+../../../../../taller1/gtest-1.8.1/gtest.h:19951:3: note: in expansion of macro ‘GTEST_PRED_FORMAT2_’
+19951 |   GTEST_PRED_FORMAT2_(pred_format, v1, v2, GTEST_FATAL_FAILURE_)
+      |   ^~~~~~~~~~~~~~~~~~~
+../../../../../taller1/gtest-1.8.1/gtest.h:21745:3: note: in expansion of macro ‘ASSERT_PRED_FORMAT2’
+21745 |   ASSERT_PRED_FORMAT2(::testing::internal:: \
+      |   ^~~~~~~~~~~~~~~~~~~
+../../../../../taller1/gtest-1.8.1/gtest.h:21746:32: note: in expansion of macro ‘GTEST_IS_NULL_LITERAL_’
+21746 |                       EqHelper<GTEST_IS_NULL_LITERAL_(val1)>::Compare, \
+      |                                ^~~~~~~~~~~~~~~~~~~~~~
+../../../../../taller1/gtest-1.8.1/gtest.h:21763:32: note: in expansion of macro ‘GTEST_ASSERT_EQ’
+21763 | # define ASSERT_EQ(val1, val2) GTEST_ASSERT_EQ(val1, val2)
+      |                                ^~~~~~~~~~~~~~~
+../../../../../taller1/lista_tests.cpp:156:5: note: in expansion of macro ‘ASSERT_EQ’
+  156 |     ASSERT_EQ(ll.iesimo(0).longitud(), 4);
+      |     ^~~~~~~~~
+../../../../../taller1/gtest-1.8.1/gtest.h:21746:60: error: template argument 1 is invalid
+21746 |                       EqHelper<GTEST_IS_NULL_LITERAL_(val1)>::Compare, \
+      |                                                            ^
+../../../../../taller1/gtest-1.8.1/gtest.h:19862:52: note: in definition of macro ‘GTEST_ASSERT_’
+19862 |   if (const ::testing::AssertionResult gtest_ar = (expression)) \
+      |                                                    ^~~~~~~~~~
+../../../../../taller1/gtest-1.8.1/gtest.h:19951:3: note: in expansion of macro ‘GTEST_PRED_FORMAT2_’
+19951 |   GTEST_PRED_FORMAT2_(pred_format, v1, v2, GTEST_FATAL_FAILURE_)
+      |   ^~~~~~~~~~~~~~~~~~~
+../../../../../taller1/gtest-1.8.1/gtest.h:21745:3: note: in expansion of macro ‘ASSERT_PRED_FORMAT2’
+21745 |   ASSERT_PRED_FORMAT2(::testing::internal:: \
+      |   ^~~~~~~~~~~~~~~~~~~
+../../../../../taller1/gtest-1.8.1/gtest.h:21763:32: note: in expansion of macro ‘GTEST_ASSERT_EQ’
+21763 | # define ASSERT_EQ(val1, val2) GTEST_ASSERT_EQ(val1, val2)
+      |                                ^~~~~~~~~~~~~~~
+../../../../../taller1/lista_tests.cpp:156:5: note: in expansion of macro ‘ASSERT_EQ’
+  156 |     ASSERT_EQ(ll.iesimo(0).longitud(), 4);
+      |     ^~~~~~~~~
+../../../../../taller1/lista_tests.cpp:156:28: error: request for member ‘longitud’ in ‘ll.Lista::iesimo(0)’, which is of non-class type ‘int’
+  156 |     ASSERT_EQ(ll.iesimo(0).longitud(), 4);
+      |                            ^~~~~~~~
+../../../../../taller1/gtest-1.8.1/gtest.h:19862:52: note: in definition of macro ‘GTEST_ASSERT_’
+19862 |   if (const ::testing::AssertionResult gtest_ar = (expression)) \
+      |                                                    ^~~~~~~~~~
+../../../../../taller1/gtest-1.8.1/gtest.h:19951:3: note: in expansion of macro ‘GTEST_PRED_FORMAT2_’
+19951 |   GTEST_PRED_FORMAT2_(pred_format, v1, v2, GTEST_FATAL_FAILURE_)
+      |   ^~~~~~~~~~~~~~~~~~~
+../../../../../taller1/gtest-1.8.1/gtest.h:21745:3: note: in expansion of macro ‘ASSERT_PRED_FORMAT2’
+21745 |   ASSERT_PRED_FORMAT2(::testing::internal:: \
+      |   ^~~~~~~~~~~~~~~~~~~
+../../../../../taller1/gtest-1.8.1/gtest.h:21763:32: note: in expansion of macro ‘GTEST_ASSERT_EQ’
+21763 | # define ASSERT_EQ(val1, val2) GTEST_ASSERT_EQ(val1, val2)
+      |                                ^~~~~~~~~~~~~~~
+../../../../../taller1/lista_tests.cpp:156:5: note: in expansion of macro ‘ASSERT_EQ’
+  156 |     ASSERT_EQ(ll.iesimo(0).longitud(), 4);
+      |     ^~~~~~~~~
+../../../../../taller1/lista_tests.cpp:159:18: error: request for member ‘eliminar’ in ‘ll.Lista::iesimo(0)’, which is of non-class type ‘int’
+  159 |     ll.iesimo(0).eliminar(0);
+      |                  ^~~~~~~~
+In file included from ../../../../../taller1/lista_tests.cpp:1:
+../../../../../taller1/lista_tests.cpp:160:28: error: request for member ‘longitud’ in ‘ll.Lista::iesimo(1)’, which is of non-class type ‘int’
+  160 |     ASSERT_EQ(ll.iesimo(1).longitud(), 4);
+      |                            ^~~~~~~~
+../../../../../taller1/gtest-1.8.1/gtest.h:19862:52: note: in definition of macro ‘GTEST_ASSERT_’
+19862 |   if (const ::testing::AssertionResult gtest_ar = (expression)) \
+      |                                                    ^~~~~~~~~~
+../../../../../taller1/gtest-1.8.1/gtest.h:19951:3: note: in expansion of macro ‘GTEST_PRED_FORMAT2_’
+19951 |   GTEST_PRED_FORMAT2_(pred_format, v1, v2, GTEST_FATAL_FAILURE_)
+      |   ^~~~~~~~~~~~~~~~~~~
+../../../../../taller1/gtest-1.8.1/gtest.h:21745:3: note: in expansion of macro ‘ASSERT_PRED_FORMAT2’
+21745 |   ASSERT_PRED_FORMAT2(::testing::internal:: \
+      |   ^~~~~~~~~~~~~~~~~~~
+../../../../../taller1/gtest-1.8.1/gtest.h:21746:32: note: in expansion of macro ‘GTEST_IS_NULL_LITERAL_’
+21746 |                       EqHelper<GTEST_IS_NULL_LITERAL_(val1)>::Compare, \
+      |                                ^~~~~~~~~~~~~~~~~~~~~~
+../../../../../taller1/gtest-1.8.1/gtest.h:21763:32: note: in expansion of macro ‘GTEST_ASSERT_EQ’
+21763 | # define ASSERT_EQ(val1, val2) GTEST_ASSERT_EQ(val1, val2)
+      |                                ^~~~~~~~~~~~~~~
+../../../../../taller1/lista_tests.cpp:160:5: note: in expansion of macro ‘ASSERT_EQ’
+  160 |     ASSERT_EQ(ll.iesimo(1).longitud(), 4);
+      |     ^~~~~~~~~
+../../../../../taller1/gtest-1.8.1/gtest.h:21746:60: error: template argument 1 is invalid
+21746 |                       EqHelper<GTEST_IS_NULL_LITERAL_(val1)>::Compare, \
+      |                                                            ^
+../../../../../taller1/gtest-1.8.1/gtest.h:19862:52: note: in definition of macro ‘GTEST_ASSERT_’
+19862 |   if (const ::testing::AssertionResult gtest_ar = (expression)) \
+      |                                                    ^~~~~~~~~~
+../../../../../taller1/gtest-1.8.1/gtest.h:19951:3: note: in expansion of macro ‘GTEST_PRED_FORMAT2_’
+19951 |   GTEST_PRED_FORMAT2_(pred_format, v1, v2, GTEST_FATAL_FAILURE_)
+      |   ^~~~~~~~~~~~~~~~~~~
+../../../../../taller1/gtest-1.8.1/gtest.h:21745:3: note: in expansion of macro ‘ASSERT_PRED_FORMAT2’
+21745 |   ASSERT_PRED_FORMAT2(::testing::internal:: \
+      |   ^~~~~~~~~~~~~~~~~~~
+../../../../../taller1/gtest-1.8.1/gtest.h:21763:32: note: in expansion of macro ‘GTEST_ASSERT_EQ’
+21763 | # define ASSERT_EQ(val1, val2) GTEST_ASSERT_EQ(val1, val2)
+      |                                ^~~~~~~~~~~~~~~
+../../../../../taller1/lista_tests.cpp:160:5: note: in expansion of macro ‘ASSERT_EQ’
+  160 |     ASSERT_EQ(ll.iesimo(1).longitud(), 4);
+      |     ^~~~~~~~~
+../../../../../taller1/lista_tests.cpp:160:28: error: request for member ‘longitud’ in ‘ll.Lista::iesimo(1)’, which is of non-class type ‘int’
+  160 |     ASSERT_EQ(ll.iesimo(1).longitud(), 4);
+      |                            ^~~~~~~~
+../../../../../taller1/gtest-1.8.1/gtest.h:19862:52: note: in definition of macro ‘GTEST_ASSERT_’
+19862 |   if (const ::testing::AssertionResult gtest_ar = (expression)) \
+      |                                                    ^~~~~~~~~~
+../../../../../taller1/gtest-1.8.1/gtest.h:19951:3: note: in expansion of macro ‘GTEST_PRED_FORMAT2_’
+19951 |   GTEST_PRED_FORMAT2_(pred_format, v1, v2, GTEST_FATAL_FAILURE_)
+      |   ^~~~~~~~~~~~~~~~~~~
+../../../../../taller1/gtest-1.8.1/gtest.h:21745:3: note: in expansion of macro ‘ASSERT_PRED_FORMAT2’
+21745 |   ASSERT_PRED_FORMAT2(::testing::internal:: \
+      |   ^~~~~~~~~~~~~~~~~~~
+../../../../../taller1/gtest-1.8.1/gtest.h:21763:32: note: in expansion of macro ‘GTEST_ASSERT_EQ’
+21763 | # define ASSERT_EQ(val1, val2) GTEST_ASSERT_EQ(val1, val2)
+      |                                ^~~~~~~~~~~~~~~
+../../../../../taller1/lista_tests.cpp:160:5: note: in expansion of macro ‘ASSERT_EQ’
+  160 |     ASSERT_EQ(ll.iesimo(1).longitud(), 4);
+      |     ^~~~~~~~~
+../../../../../taller1/lista_tests.cpp: In member function ‘virtual void lista_test_test_lista_elem_complejo_Test::TestBody()’:
+../../../../../taller1/lista_tests.cpp:178:5: error: ‘Lista’ is not a template
+  178 |     Lista<punto2d> l;
+      |     ^~~~~
+../../../../../taller1/lista_tests.cpp:180:23: error: cannot convert ‘lista_test_test_lista_elem_complejo_Test::TestBody()::punto2d’ to ‘const int&’
+  180 |     l.agregarAdelante(p);
+      |                       ^
+      |                       |
+      |                       lista_test_test_lista_elem_complejo_Test::TestBody()::punto2d
+In file included from ../../../../../taller1/lista_tests.cpp:2:
+./Lista.h:40:37: note:   initializing argument 1 of ‘void Lista::agregarAdelante(const int&)’
+   40 |     void agregarAdelante(const int& elem);
+      |                          ~~~~~~~~~~~^~~~
+../../../../../taller1/lista_tests.cpp:181:23: error: cannot convert ‘lista_test_test_lista_elem_complejo_Test::TestBody()::punto2d’ to ‘const int&’
+  181 |     l.agregarAdelante(punto2d(1,1));
+      |                       ^~~~~~~~~~~~
+      |                       |
+      |                       lista_test_test_lista_elem_complejo_Test::TestBody()::punto2d
+In file included from ../../../../../taller1/lista_tests.cpp:2:
+./Lista.h:40:37: note:   initializing argument 1 of ‘void Lista::agregarAdelante(const int&)’
+   40 |     void agregarAdelante(const int& elem);
+      |                          ~~~~~~~~~~~^~~~

@@ -1,0 +1,30 @@
+In file included from ../../../../../taller1/lista_tests.cpp:2:
+./Lista.h: In constructor ‘Lista::Nodo::Nodo(int)’:
+./Lista.h:92:13: warning: ‘Lista::Nodo::valor’ will be initialized after [-Wreorder]
+   92 |         int valor;
+      |             ^~~~~
+./Lista.h:91:15: warning:   ‘Lista::Nodo* Lista::Nodo::ant’ [-Wreorder]
+   91 |         Nodo* ant;
+      |               ^~~
+./Lista.h:94:9: warning:   when initialized here [-Wreorder]
+   94 |         Nodo(int x): valor(x), ant(nullptr), sig(nullptr){}
+      |         ^~~~
+In file included from ../../../../../taller1/lista_tests.cpp:3:
+./Lista.cpp: In member function ‘void Lista::eliminar(Nat)’:
+./Lista.cpp:63:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘Nat’ {aka ‘long unsigned int’} [-Wsign-compare]
+   63 |     for (int j=0; j<i && i!=long_-1; j++) {
+      |                   ~^~
+./Lista.cpp:63:27: warning: comparison of integer expressions of different signedness: ‘Nat’ {aka ‘long unsigned int’} and ‘int’ [-Wsign-compare]
+   63 |     for (int j=0; j<i && i!=long_-1; j++) {
+      |                          ~^~~~~~~~~
+./Lista.cpp:77:14: warning: comparison of integer expressions of different signedness: ‘Nat’ {aka ‘long unsigned int’} and ‘int’ [-Wsign-compare]
+   77 |         if (i==long_-1) {
+      |             ~^~~~~~~~~
+./Lista.cpp: In member function ‘const int& Lista::iesimo(Nat) const’:
+./Lista.cpp:97:19: warning: comparison of integer expressions of different signedness: ‘int’ and ‘Nat’ {aka ‘long unsigned int’} [-Wsign-compare]
+   97 |     for(int j=0; j<i; j++){ //empieza desde 1 porque el 0 esta arriba. Termina en i-1 porque el ult tambien esta arr.
+      |                  ~^~
+./Lista.cpp: In member function ‘int& Lista::iesimo(Nat)’:
+./Lista.cpp:105:19: warning: comparison of integer expressions of different signedness: ‘int’ and ‘Nat’ {aka ‘long unsigned int’} [-Wsign-compare]
+  105 |     for(int j=0; j<i; j++){ //empieza desde 1 porque el 0 esta arriba. Termina en i-1 porque el ult tambien esta arr.
+      |                  ~^~
